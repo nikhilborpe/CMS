@@ -8,14 +8,14 @@
  * Controller of the cmsApp
  */
 angular.module('cmsApp')
-  .controller('LoginCtrl', function ($scope,$location){
+  .controller('LoginCtrl', function ($scope,$location,authenticationService){
   	$scope.submit=function(){
   		var username=$scope.username;
   		var password=$scope.password;
-  		if(username == 'admin' && password=='admin'){
-  			$location.path('/about');
-  		}
+  		authenticationService.login(username,password,function(resp){
 
+
+      });
   	};
 
   });
