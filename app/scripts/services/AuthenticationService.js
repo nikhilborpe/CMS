@@ -7,7 +7,7 @@ angular.module('cmsApp').service('authenticationService',['$http','$log','$locat
 
   this.login=function(username,password,cb){
       $http({
-        url:'http://localhost:8080/cms/login?username='+username+'&password='+password,
+        url:'http://localhost:8080/login/Index?username='+username+'&password='+password,
         method:'GET'
       }).then(
         function(resp){

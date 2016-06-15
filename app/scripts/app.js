@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/createnewaccount', {
+        templateUrl: 'views/createNewAccount.html',
+        controller: 'CreateNewAccountCtrl',
+        controllerAs: 'createNewAcount'
+      })
       .otherwise({
         redirectTo: '/'
       });
