@@ -79,5 +79,13 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+
+  }
+  #headerpanel{
+    position: relative;
+    padding-left:20px;
+    background: #eee;
+    text-align:left;
+    margin-bottom: 0 !important;
   }
 }

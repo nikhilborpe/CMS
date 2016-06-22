@@ -1,9 +1,145 @@
 <div ng-controller="CreateNewAccountCtrl">
-  <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-      <div class="jumbotron">
+     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button-->
+                <a href="index.html" style="padding-left: 100px;">
+                    <img class="img-responsive2" src="images/cmslogo.jpg"/>
+                </a>
+            </div>
+            <div class="nav navbar-top-links navbar-right" style="padding-right:100px; padding-top:15px">
+                <button type="button" class="btn btn-primary" >Sign In</button>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="topbuffer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Create your CMS Accout</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7" style="background">
                 
-      </div>
-    </div>
-  </div>
+            </div>
+            <div class="col-md-4 jumbotron">
+              <form role="form">
+                  <div class="row topbuffer">
+                    <div class="col-md-6 lbl">
+                        <label for="Name">Name</label>
+                    </div>
+                    <div class="col-md-6">
+                         
+                    </div>
+                  </div>
+
+                  <div class="row topbuffer">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="firstname" placeholder="first name"/>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control " id="lastname" placeholder="last name"/>
+                    </div>
+                  </div>
+        
+                  <div class="row topbuffer">
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="email"/>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                  </div> 
+
+                   <div class="row topbuffer">
+                    <div class="col-md-6 lbl">
+                        <label for="password">Create your password</label>
+                    </div>
+                    <div class="col-md-6">
+                         
+                    </div>
+                  </div>
+
+                  <div class="row topbuffer">
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" id="password"/>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                  </div>
+
+                  <div class="row topbuffer">
+                    <div class="col-md-6 lbl">
+                        <label for="confirmpassword">Confirm your password</label>
+                    </div>
+                    <div class="col-md-6">
+                         
+                    </div>
+                  </div> 
+                  
+                  <div class="row topbuffer">
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" id="confirmpassword"/>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                  </div>
+
+                  <div class="row topbuffer">
+                    <div class="col-md-6 lbl">
+                        <label for="birthdate">Birth Date</label>
+                    </div>
+                    <div class="col-md-6">
+                         
+                    </div>
+                  </div>
+
+                  <div class="row topbuffer">
+                    <div class="col-md-2">
+                       <select class="selectpicker">
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Aug</option>
+                            <option>Sep</option>
+                            <option>Oct</option>
+                            <option>Nov</option>
+                            <option>Dec</option>
+                       </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="date" placeholder="date" />
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="year" placeholder="year" />
+                    </div>
+                  </div>
+
+                  <div class="row topbuffer">
+                    <div class="col-md-4">
+                         
+                    </div>
+
+                    <div class="col-md-4">
+                    
+                    </div>
+
+                    <div class="col-md-4" style="text-align:right;">
+                        <button type="submit" name="submit" class="btn btn-primary">Next step</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
 </div>

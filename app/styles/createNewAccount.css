@@ -1,0 +1,19 @@
+.topbuffer{
+	margin-top: 10px;
+}
+
+h1{
+	text-align: center;
+    font-family: 'Open Sans', arial;
+    color: #555;
+    font-size: 38px;
+    font-weight: 300;
+    margin-top: 27px;
+    margin-bottom: 50px;
+}
+.lbl{
+	text-align: left;
+}
+.page{
+    background-image: url('images/submission-quality-compliance.jpg');
+}
