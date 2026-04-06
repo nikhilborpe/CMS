@@ -1,0 +1,143 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #0f1419;
+  background: #e6ecf0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(160px, 240px) minmax(320px, 640px);
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.leftRail {
+  position: sticky;
+  top: 24px;
+  height: fit-content;
+}
+
+.leftRail h1 {
+  margin: 0;
+  color: #1d9bf0;
+}
+
+.leftRail p {
+  margin-top: 8px;
+  color: #536471;
+}
+
+.timelineCard {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+}
+
+.timelineCard h2 {
+  margin: 0 0 16px;
+}
+
+.tweetComposer {
+  border-bottom: 1px solid #eff3f4;
+  padding-bottom: 16px;
+}
+
+.tweetComposer textarea {
+  width: 100%;
+  border: 1px solid #cfd9de;
+  border-radius: 10px;
+  padding: 12px;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.composerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.limitOkay {
+  color: #536471;
+}
+
+.limitError {
+  color: #d93025;
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
+  color: #fff;
+  background: #1d9bf0;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.feed {
+  display: grid;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.tweetCard {
+  border: 1px solid #eff3f4;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.tweetCard header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #536471;
+}
+
+.tweetCard header strong {
+  color: #0f1419;
+}
+
+.tweetCard header time {
+  margin-left: auto;
+}
+
+.tweetCard p {
+  margin: 10px 0;
+  white-space: pre-wrap;
+}
+
+.tweetCard footer {
+  display: flex;
+  gap: 16px;
+  color: #536471;
+}
+
+@media (max-width: 840px) {
+  .page {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .leftRail {
+    position: static;
+  }
+}
